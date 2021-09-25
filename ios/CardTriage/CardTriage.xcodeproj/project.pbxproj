@@ -22,6 +22,7 @@
 		099B25F726FF6EA0008DB44A /* CardsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F626FF6EA0008DB44A /* CardsListUseCase.swift */; };
 		099B25F926FF6EE7008DB44A /* CardDataInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F826FF6EE7008DB44A /* CardDataInterface.swift */; };
 		099B25FB26FF702B008DB44A /* CardDataLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25FA26FF702B008DB44A /* CardDataLocal.swift */; };
+		099B25FD26FF740E008DB44A /* CardDataRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25FC26FF740E008DB44A /* CardDataRemote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		099B25F626FF6EA0008DB44A /* CardsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListUseCase.swift; sourceTree = "<group>"; };
 		099B25F826FF6EE7008DB44A /* CardDataInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataInterface.swift; sourceTree = "<group>"; };
 		099B25FA26FF702B008DB44A /* CardDataLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataLocal.swift; sourceTree = "<group>"; };
+		099B25FC26FF740E008DB44A /* CardDataRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataRemote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				099B25FA26FF702B008DB44A /* CardDataLocal.swift */,
+				099B25FC26FF740E008DB44A /* CardDataRemote.swift */,
 			);
 			path = DomainImplementation;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099B25F526FF6B8F008DB44A /* CardsListItemModel.swift in Sources */,
+				099B25FD26FF740E008DB44A /* CardDataRemote.swift in Sources */,
 				099B25B526FF6854008DB44A /* ViewController.swift in Sources */,
 				099B25F126FF6AF6008DB44A /* CardData.swift in Sources */,
 				099B25B126FF6854008DB44A /* AppDelegate.swift in Sources */,
