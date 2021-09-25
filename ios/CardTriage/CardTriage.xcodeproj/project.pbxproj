@@ -19,6 +19,8 @@
 		099B25F126FF6AF6008DB44A /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F026FF6AF6008DB44A /* CardData.swift */; };
 		099B25F326FF6B2C008DB44A /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F226FF6B2C008DB44A /* CardEntity.swift */; };
 		099B25F526FF6B8F008DB44A /* CardsListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F426FF6B8F008DB44A /* CardsListItemModel.swift */; };
+		099B25F726FF6EA0008DB44A /* CardsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F626FF6EA0008DB44A /* CardsListUseCase.swift */; };
+		099B25F926FF6EE7008DB44A /* CardDataInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F826FF6EE7008DB44A /* CardDataInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		099B25F026FF6AF6008DB44A /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		099B25F226FF6B2C008DB44A /* CardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntity.swift; sourceTree = "<group>"; };
 		099B25F426FF6B8F008DB44A /* CardsListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListItemModel.swift; sourceTree = "<group>"; };
+		099B25F626FF6EA0008DB44A /* CardsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListUseCase.swift; sourceTree = "<group>"; };
+		099B25F826FF6EE7008DB44A /* CardDataInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 		099B25E926FF69CF008DB44A /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				099B25F826FF6EE7008DB44A /* CardDataInterface.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 		099B25EB26FF69DE008DB44A /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				099B25F626FF6EA0008DB44A /* CardsListUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -387,8 +393,10 @@
 				099B25B526FF6854008DB44A /* ViewController.swift in Sources */,
 				099B25F126FF6AF6008DB44A /* CardData.swift in Sources */,
 				099B25B126FF6854008DB44A /* AppDelegate.swift in Sources */,
+				099B25F726FF6EA0008DB44A /* CardsListUseCase.swift in Sources */,
 				099B25B326FF6854008DB44A /* SceneDelegate.swift in Sources */,
 				099B25F326FF6B2C008DB44A /* CardEntity.swift in Sources */,
+				099B25F926FF6EE7008DB44A /* CardDataInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
