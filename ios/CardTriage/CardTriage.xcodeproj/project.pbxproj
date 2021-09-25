@@ -99,13 +99,11 @@
 		099B25AF26FF6854008DB44A /* CardTriage */ = {
 			isa = PBXGroup;
 			children = (
-				099B25B026FF6854008DB44A /* AppDelegate.swift */,
-				099B25B226FF6854008DB44A /* SceneDelegate.swift */,
-				099B25B426FF6854008DB44A /* ViewController.swift */,
-				099B25B626FF6854008DB44A /* Main.storyboard */,
-				099B25B926FF6856008DB44A /* Assets.xcassets */,
-				099B25BB26FF6856008DB44A /* LaunchScreen.storyboard */,
-				099B25BE26FF6856008DB44A /* Info.plist */,
+				099B25E026FF690D008DB44A /* Application */,
+				099B25E126FF6914008DB44A /* Presentation */,
+				099B25E226FF6925008DB44A /* Domain */,
+				099B25E326FF6943008DB44A /* Data */,
+				099B25E426FF694C008DB44A /* Resources */,
 			);
 			path = CardTriage;
 			sourceTree = "<group>";
@@ -126,6 +124,120 @@
 				099B25D426FF6856008DB44A /* Info.plist */,
 			);
 			path = CardTriageUITests;
+			sourceTree = "<group>";
+		};
+		099B25E026FF690D008DB44A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				099B25B026FF6854008DB44A /* AppDelegate.swift */,
+				099B25B226FF6854008DB44A /* SceneDelegate.swift */,
+				099B25B426FF6854008DB44A /* ViewController.swift */,
+				099B25B626FF6854008DB44A /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		099B25E126FF6914008DB44A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				099B25E526FF69A6008DB44A /* CardsList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		099B25E226FF6925008DB44A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				099B25EB26FF69DE008DB44A /* UseCase */,
+				099B25EA26FF69D6008DB44A /* Entity */,
+				099B25E926FF69CF008DB44A /* Interface */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		099B25E326FF6943008DB44A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				099B25ED26FF69ED008DB44A /* DomainImplementation */,
+				099B25EC26FF69E7008DB44A /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		099B25E426FF694C008DB44A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				099B25B926FF6856008DB44A /* Assets.xcassets */,
+				099B25BB26FF6856008DB44A /* LaunchScreen.storyboard */,
+				099B25BE26FF6856008DB44A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		099B25E526FF69A6008DB44A /* CardsList */ = {
+			isa = PBXGroup;
+			children = (
+				099B25E626FF69B1008DB44A /* View */,
+				099B25E826FF69BE008DB44A /* ViewModel */,
+				099B25E726FF69B8008DB44A /* Model */,
+			);
+			path = CardsList;
+			sourceTree = "<group>";
+		};
+		099B25E626FF69B1008DB44A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		099B25E726FF69B8008DB44A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		099B25E826FF69BE008DB44A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		099B25E926FF69CF008DB44A /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		099B25EA26FF69D6008DB44A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		099B25EB26FF69DE008DB44A /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		099B25EC26FF69E7008DB44A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		099B25ED26FF69ED008DB44A /* DomainImplementation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainImplementation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
