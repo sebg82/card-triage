@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct CardsListSectionModel {
+    var status: String
+    var cards: [CardsListItemModel]
+}
+
 struct CardsListItemModel {
 
     let arrhythmias: String
@@ -14,3 +19,19 @@ struct CardsListItemModel {
     let patientName: String
     let status: String
 }
+
+extension CardsListItemModel {
+
+    init(_ cardEntity: CardEntity) {
+        self.arrhythmias = cardEntity.arrhythmias.map{$0.rawValue}.joined(separator: ", ")
+        self.createdDate = dateFormatter.string(from: cardEntity.createdDate)
+        self.patientName = cardEntity.patientName
+        self.status = cardEntity.status.rawValue 
+    }
+}
+
+private let dateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium
+    return formatter
+}()

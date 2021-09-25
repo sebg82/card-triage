@@ -22,4 +22,8 @@ final class CardsListUseCase {
     func save(_ cardsList: [CardEntity], completion: @escaping (Result<Bool, Error>) -> Void) {
         cardData.saveCardsList(cardsList, completion: completion)
     }
+    
+    func getAllStatus() -> [CardEntity.Status] {
+        CardEntity.Status.allCases
+    }
 }
