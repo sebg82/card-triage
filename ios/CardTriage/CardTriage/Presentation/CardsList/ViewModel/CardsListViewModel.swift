@@ -12,6 +12,7 @@ final class CardsListViewModel {
     private let cardsListUseCase: CardsListUseCase
     var sectionsOriginal: [CardsListSectionModel] = []
     var sections: [CardsListSectionModel] = []
+    var filter: String = ""
     var didChange: () -> () = { }
     
     init(_ cardsListUseCase: CardsListUseCase) {
@@ -31,5 +32,11 @@ final class CardsListViewModel {
                 print(error)
             }
         }
+    }
+    
+    func filter(with text: String) {
+        filter = text.lowercased()
+        // TODO filter on sectionsOriginal and put the result in sections
+        didChange()
     }
 }

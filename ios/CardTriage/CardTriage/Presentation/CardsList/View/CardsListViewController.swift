@@ -26,6 +26,7 @@ final class CardsListViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "Patients"
         navigationItem.setHidesBackButton(true, animated: false)
+        initSearchController()
         initTableview()
         initModel()
     }
