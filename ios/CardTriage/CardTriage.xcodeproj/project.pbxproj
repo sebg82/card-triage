@@ -32,6 +32,8 @@
 		099B260B26FF851F008DB44A /* CardsListViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260A26FF851F008DB44A /* CardsListViewController+UITableView.swift */; };
 		099B260D26FF85D3008DB44A /* CardsListViewController+UISearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260C26FF85D3008DB44A /* CardsListViewController+UISearch.swift */; };
 		099B260F26FF8B82008DB44A /* CardsListViewController+keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260E26FF8B82008DB44A /* CardsListViewController+keyboard.swift */; };
+		099B261126FF9182008DB44A /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261026FF9182008DB44A /* AppFlowCoordinator.swift */; };
+		099B261326FF91AB008DB44A /* CardsListFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261226FF91AB008DB44A /* CardsListFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		099B260A26FF851F008DB44A /* CardsListViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsListViewController+UITableView.swift"; sourceTree = "<group>"; };
 		099B260C26FF85D3008DB44A /* CardsListViewController+UISearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsListViewController+UISearch.swift"; sourceTree = "<group>"; };
 		099B260E26FF8B82008DB44A /* CardsListViewController+keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsListViewController+keyboard.swift"; sourceTree = "<group>"; };
+		099B261026FF9182008DB44A /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		099B261226FF91AB008DB44A /* CardsListFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +169,9 @@
 			children = (
 				099B25B026FF6854008DB44A /* AppDelegate.swift */,
 				099B25B226FF6854008DB44A /* SceneDelegate.swift */,
-				099B25B426FF6854008DB44A /* RootViewController.swift */,
 				099B25B626FF6854008DB44A /* Main.storyboard */,
+				099B25B426FF6854008DB44A /* RootViewController.swift */,
+				099B261026FF9182008DB44A /* AppFlowCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 		099B25E526FF69A6008DB44A /* CardsList */ = {
 			isa = PBXGroup;
 			children = (
+				099B261226FF91AB008DB44A /* CardsListFlowCoordinator.swift */,
 				099B25E626FF69B1008DB44A /* View */,
 				099B25E826FF69BE008DB44A /* ViewModel */,
 				099B25E726FF69B8008DB44A /* Model */,
@@ -434,11 +440,13 @@
 				099B25B126FF6854008DB44A /* AppDelegate.swift in Sources */,
 				099B25F726FF6EA0008DB44A /* CardsListUseCase.swift in Sources */,
 				099B260D26FF85D3008DB44A /* CardsListViewController+UISearch.swift in Sources */,
+				099B261126FF9182008DB44A /* AppFlowCoordinator.swift in Sources */,
 				099B260126FF769D008DB44A /* CardsListViewController.swift in Sources */,
 				099B25B326FF6854008DB44A /* SceneDelegate.swift in Sources */,
 				099B260326FF7718008DB44A /* CardsListViewModel.swift in Sources */,
 				099B25FB26FF702B008DB44A /* CardDataLocal.swift in Sources */,
 				099B260B26FF851F008DB44A /* CardsListViewController+UITableView.swift in Sources */,
+				099B261326FF91AB008DB44A /* CardsListFlowCoordinator.swift in Sources */,
 				099B25F326FF6B2C008DB44A /* CardEntity.swift in Sources */,
 				099B25F926FF6EE7008DB44A /* CardDataInterface.swift in Sources */,
 			);
