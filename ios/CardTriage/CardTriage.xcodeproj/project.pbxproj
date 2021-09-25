@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		099B25B126FF6854008DB44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25B026FF6854008DB44A /* AppDelegate.swift */; };
 		099B25B326FF6854008DB44A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25B226FF6854008DB44A /* SceneDelegate.swift */; };
-		099B25B526FF6854008DB44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25B426FF6854008DB44A /* ViewController.swift */; };
+		099B25B526FF6854008DB44A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25B426FF6854008DB44A /* RootViewController.swift */; };
 		099B25B826FF6854008DB44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099B25B626FF6854008DB44A /* Main.storyboard */; };
 		099B25BA26FF6856008DB44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099B25B926FF6856008DB44A /* Assets.xcassets */; };
 		099B25BD26FF6856008DB44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099B25BB26FF6856008DB44A /* LaunchScreen.storyboard */; };
@@ -49,7 +49,7 @@
 		099B25AD26FF6854008DB44A /* CardTriage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTriage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099B25B026FF6854008DB44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099B25B226FF6854008DB44A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		099B25B426FF6854008DB44A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		099B25B426FF6854008DB44A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		099B25B726FF6854008DB44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		099B25B926FF6856008DB44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		099B25BC26FF6856008DB44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 			children = (
 				099B25B026FF6854008DB44A /* AppDelegate.swift */,
 				099B25B226FF6854008DB44A /* SceneDelegate.swift */,
-				099B25B426FF6854008DB44A /* ViewController.swift */,
+				099B25B426FF6854008DB44A /* RootViewController.swift */,
 				099B25B626FF6854008DB44A /* Main.storyboard */,
 			);
 			path = Application;
@@ -407,7 +407,7 @@
 			files = (
 				099B25F526FF6B8F008DB44A /* CardsListItemModel.swift in Sources */,
 				099B25FD26FF740E008DB44A /* CardDataRemote.swift in Sources */,
-				099B25B526FF6854008DB44A /* ViewController.swift in Sources */,
+				099B25B526FF6854008DB44A /* RootViewController.swift in Sources */,
 				099B25F126FF6AF6008DB44A /* CardData.swift in Sources */,
 				099B25B126FF6854008DB44A /* AppDelegate.swift in Sources */,
 				099B25F726FF6EA0008DB44A /* CardsListUseCase.swift in Sources */,
