@@ -10,7 +10,7 @@ import Foundation
 final class CardsListViewModel {
     
     private let cardsListUseCase: CardsListUseCase
-    var sectionsOriginal: [CardsListSectionModel] = []
+    private var sectionsOriginal: [CardsListSectionModel] = []
     var sections: [CardsListSectionModel] = []
     var filter: String = ""
     var didChange: () -> () = { }
@@ -27,7 +27,7 @@ final class CardsListViewModel {
                 self.sectionsOriginal = self.cardsListUseCase.getAllStatus().map { status in
                     CardsListSectionModel(status: status.rawValue, cards: flatCardsList.filter { $0.status == status.rawValue })
                 }
-                self.didChange()
+                self.updateSections()
             case .failure(let error):
                 print(error)
             }
@@ -36,7 +36,21 @@ final class CardsListViewModel {
     
     func filter(with text: String) {
         filter = text.lowercased()
-        // TODO filter on sectionsOriginal and put the result in sections
+        updateSections()
+    }
+    
+    private func updateSections() {
+        var filteredSections = self.sectionsOriginal
+        if !filter.isEmpty {
+            filteredSections = filteredSections.map { section in
+                let filteredCard = section.cards.filter {
+                    $0.arrhythmias.lowercased().contains(filter) ||
+                    $0.patientName.lowercased().contains(filter)
+                }
+                return CardsListSectionModel(status: section.status, cards: filteredCard)
+            }
+        }
+        sections = filteredSections
         didChange()
     }
 }

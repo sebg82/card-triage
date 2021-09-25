@@ -17,20 +17,20 @@ extension CardsListViewController {
 extension CardsListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return cardsListViewModel.sectionsOriginal.count
+        return cardsListViewModel.sections.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return cardsListViewModel.sectionsOriginal[section].status
+        return cardsListViewModel.sections[section].status
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cardsListViewModel.sectionsOriginal[section].cards.count
+        return cardsListViewModel.sections[section].cards.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CardsListItemCell.reuseIdentifier, for: indexPath) as! CardsListItemCell
-        cell.fill(with: cardsListViewModel.sectionsOriginal[indexPath.section].cards[indexPath.row])
+        cell.fill(with: cardsListViewModel.sections[indexPath.section].cards[indexPath.row])
         return cell
     }
     
