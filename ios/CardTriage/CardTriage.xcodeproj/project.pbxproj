@@ -13,7 +13,6 @@
 		099B25B826FF6854008DB44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099B25B626FF6854008DB44A /* Main.storyboard */; };
 		099B25BA26FF6856008DB44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099B25B926FF6856008DB44A /* Assets.xcassets */; };
 		099B25BD26FF6856008DB44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099B25BB26FF6856008DB44A /* LaunchScreen.storyboard */; };
-		099B25C826FF6856008DB44A /* CardTriageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25C726FF6856008DB44A /* CardTriageTests.swift */; };
 		099B25D326FF6856008DB44A /* CardTriageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25D226FF6856008DB44A /* CardTriageUITests.swift */; };
 		099B25EF26FF6AA4008DB44A /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 099B25EE26FF6AA4008DB44A /* cards.json */; };
 		099B25F126FF6AF6008DB44A /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F026FF6AF6008DB44A /* CardData.swift */; };
@@ -35,6 +34,7 @@
 		099B261126FF9182008DB44A /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261026FF9182008DB44A /* AppFlowCoordinator.swift */; };
 		099B261326FF91AB008DB44A /* CardsListFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261226FF91AB008DB44A /* CardsListFlowCoordinator.swift */; };
 		099B261526FF98D7008DB44A /* CardData+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261426FF98D7008DB44A /* CardData+Mapping.swift */; };
+		099B261926FF9ACA008DB44A /* CleanArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261826FF9ACA008DB44A /* CleanArchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		099B25BC26FF6856008DB44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		099B25BE26FF6856008DB44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		099B25C326FF6856008DB44A /* CardTriageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTriageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		099B25C726FF6856008DB44A /* CardTriageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTriageTests.swift; sourceTree = "<group>"; };
 		099B25C926FF6856008DB44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		099B25CE26FF6856008DB44A /* CardTriageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTriageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		099B25D226FF6856008DB44A /* CardTriageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTriageUITests.swift; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		099B261026FF9182008DB44A /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 		099B261226FF91AB008DB44A /* CardsListFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListFlowCoordinator.swift; sourceTree = "<group>"; };
 		099B261426FF98D7008DB44A /* CardData+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardData+Mapping.swift"; sourceTree = "<group>"; };
+		099B261826FF9ACA008DB44A /* CleanArchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 		099B25C626FF6856008DB44A /* CardTriageTests */ = {
 			isa = PBXGroup;
 			children = (
-				099B25C726FF6856008DB44A /* CardTriageTests.swift */,
+				099B261626FF9AAB008DB44A /* Domain */,
 				099B25C926FF6856008DB44A /* Info.plist */,
 			);
 			path = CardTriageTests;
@@ -298,6 +298,22 @@
 				099B25FC26FF740E008DB44A /* CardDataRemote.swift */,
 			);
 			path = DomainImplementation;
+			sourceTree = "<group>";
+		};
+		099B261626FF9AAB008DB44A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				099B261726FF9AB5008DB44A /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		099B261726FF9AB5008DB44A /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				099B261826FF9ACA008DB44A /* CleanArchTests.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,7 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				099B25C826FF6856008DB44A /* CardTriageTests.swift in Sources */,
+				099B261926FF9ACA008DB44A /* CleanArchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
