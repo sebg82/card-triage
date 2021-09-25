@@ -17,7 +17,7 @@ struct CardsListItemModel {
     let arrhythmias: String
     let createdDate: String
     let patientName: String
-    let status: String
+    var status: String
 }
 
 extension CardsListItemModel {

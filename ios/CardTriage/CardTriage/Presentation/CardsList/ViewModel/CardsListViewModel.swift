@@ -53,4 +53,22 @@ final class CardsListViewModel {
         sections = filteredSections
         didChange()
     }
+    
+    func move(rowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) -> Bool {
+        var item = sectionsOriginal[sourceIndexPath.section].cards.remove(at: sourceIndexPath.row)
+        item.status = sectionsOriginal[destinationIndexPath.section].status
+        sectionsOriginal[destinationIndexPath.section].cards.insert(item, at: destinationIndexPath.row)
+        updateSections()
+        return true
+    }
+    
+    func canMove(from sourceSection: Int, to destinationSection: Int) -> Bool {
+        let sourceStatus = sectionsOriginal[sourceSection].status
+        let destinationStatus = sectionsOriginal[destinationSection].status
+        let pending = CardEntity.Status.pending.rawValue
+        let rejected = CardEntity.Status.rejected.rawValue
+        let done = CardEntity.Status.done.rawValue
+        return (sourceStatus == done && destinationStatus == rejected) ||
+               ((sourceStatus == pending || sourceStatus == rejected) && destinationStatus == done)
+    }
 }
