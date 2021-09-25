@@ -21,5 +21,20 @@ final class CardsListViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.title = "Patients"
+        navigationItem.setHidesBackButton(true, animated: false)
+        
+        // VM -> V
+        cardsListViewModel.didChange = {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        
+        // V -> VM
+        cardsListViewModel.loadData()
+    }
 }
