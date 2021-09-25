@@ -15,6 +15,10 @@
 		099B25BD26FF6856008DB44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099B25BB26FF6856008DB44A /* LaunchScreen.storyboard */; };
 		099B25C826FF6856008DB44A /* CardTriageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25C726FF6856008DB44A /* CardTriageTests.swift */; };
 		099B25D326FF6856008DB44A /* CardTriageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25D226FF6856008DB44A /* CardTriageUITests.swift */; };
+		099B25EF26FF6AA4008DB44A /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 099B25EE26FF6AA4008DB44A /* cards.json */; };
+		099B25F126FF6AF6008DB44A /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F026FF6AF6008DB44A /* CardData.swift */; };
+		099B25F326FF6B2C008DB44A /* CardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F226FF6B2C008DB44A /* CardEntity.swift */; };
+		099B25F526FF6B8F008DB44A /* CardsListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B25F426FF6B8F008DB44A /* CardsListItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		099B25CE26FF6856008DB44A /* CardTriageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTriageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		099B25D226FF6856008DB44A /* CardTriageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTriageUITests.swift; sourceTree = "<group>"; };
 		099B25D426FF6856008DB44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		099B25EE26FF6AA4008DB44A /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
+		099B25F026FF6AF6008DB44A /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		099B25F226FF6B2C008DB44A /* CardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntity.swift; sourceTree = "<group>"; };
+		099B25F426FF6B8F008DB44A /* CardsListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +178,7 @@
 				099B25B926FF6856008DB44A /* Assets.xcassets */,
 				099B25BB26FF6856008DB44A /* LaunchScreen.storyboard */,
 				099B25BE26FF6856008DB44A /* Info.plist */,
+				099B25EE26FF6AA4008DB44A /* cards.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -194,6 +203,7 @@
 		099B25E726FF69B8008DB44A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				099B25F426FF6B8F008DB44A /* CardsListItemModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +225,7 @@
 		099B25EA26FF69D6008DB44A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				099B25F226FF6B2C008DB44A /* CardEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -229,6 +240,7 @@
 		099B25EC26FF69E7008DB44A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				099B25F026FF6AF6008DB44A /* CardData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,6 +358,7 @@
 				099B25BD26FF6856008DB44A /* LaunchScreen.storyboard in Resources */,
 				099B25BA26FF6856008DB44A /* Assets.xcassets in Resources */,
 				099B25B826FF6854008DB44A /* Main.storyboard in Resources */,
+				099B25EF26FF6AA4008DB44A /* cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,9 +383,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099B25F526FF6B8F008DB44A /* CardsListItemModel.swift in Sources */,
 				099B25B526FF6854008DB44A /* ViewController.swift in Sources */,
+				099B25F126FF6AF6008DB44A /* CardData.swift in Sources */,
 				099B25B126FF6854008DB44A /* AppDelegate.swift in Sources */,
 				099B25B326FF6854008DB44A /* SceneDelegate.swift in Sources */,
+				099B25F326FF6B2C008DB44A /* CardEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +566,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5T8PPM9YWG;
-				INFOPLIST_FILE = CardTriage/Info.plist;
+				INFOPLIST_FILE = CardTriage/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,7 +585,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5T8PPM9YWG;
-				INFOPLIST_FILE = CardTriage/Info.plist;
+				INFOPLIST_FILE = CardTriage/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
