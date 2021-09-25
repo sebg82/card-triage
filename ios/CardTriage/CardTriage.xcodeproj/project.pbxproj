@@ -34,6 +34,7 @@
 		099B260F26FF8B82008DB44A /* CardsListViewController+keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260E26FF8B82008DB44A /* CardsListViewController+keyboard.swift */; };
 		099B261126FF9182008DB44A /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261026FF9182008DB44A /* AppFlowCoordinator.swift */; };
 		099B261326FF91AB008DB44A /* CardsListFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261226FF91AB008DB44A /* CardsListFlowCoordinator.swift */; };
+		099B261526FF98D7008DB44A /* CardData+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B261426FF98D7008DB44A /* CardData+Mapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		099B260E26FF8B82008DB44A /* CardsListViewController+keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsListViewController+keyboard.swift"; sourceTree = "<group>"; };
 		099B261026FF9182008DB44A /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 		099B261226FF91AB008DB44A /* CardsListFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListFlowCoordinator.swift; sourceTree = "<group>"; };
+		099B261426FF98D7008DB44A /* CardData+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardData+Mapping.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				099B25F026FF6AF6008DB44A /* CardData.swift */,
+				099B261426FF98D7008DB44A /* CardData+Mapping.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				099B260F26FF8B82008DB44A /* CardsListViewController+keyboard.swift in Sources */,
 				099B260526FF7EBA008DB44A /* CardsListItemCell.swift in Sources */,
 				099B25B126FF6854008DB44A /* AppDelegate.swift in Sources */,
+				099B261526FF98D7008DB44A /* CardData+Mapping.swift in Sources */,
 				099B25F726FF6EA0008DB44A /* CardsListUseCase.swift in Sources */,
 				099B260D26FF85D3008DB44A /* CardsListViewController+UISearch.swift in Sources */,
 				099B261126FF9182008DB44A /* AppFlowCoordinator.swift in Sources */,

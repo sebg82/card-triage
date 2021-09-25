@@ -11,7 +11,7 @@ final class CardsListViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
-    var cardsListViewModel: CardsListViewModel!
+    let cardsListViewModel: CardsListViewModel
     
     init(_ cardsListViewModel: CardsListViewModel) {
         self.cardsListViewModel = cardsListViewModel

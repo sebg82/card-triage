@@ -8,12 +8,11 @@
 import Foundation
 
 struct CardsListSectionModel {
-    var status: String
+    let status: String
     var cards: [CardsListItemModel]
 }
 
 struct CardsListItemModel {
-
     let arrhythmias: String
     let createdDate: String
     let patientName: String

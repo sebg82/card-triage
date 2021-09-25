@@ -17,10 +17,7 @@ final class CardsListItemCell: UITableViewCell {
     @IBOutlet private var createdDate: UILabel!
     @IBOutlet private var arrhythmias: UILabel!
 
-    private var viewModel: CardsListItemModel!
-
     func fill(with viewModel: CardsListItemModel) {
-        self.viewModel = viewModel
         arrhythmias.text = viewModel.arrhythmias
         createdDate.text = viewModel.createdDate
         patientName.text = viewModel.patientName

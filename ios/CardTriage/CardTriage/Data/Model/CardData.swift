@@ -37,36 +37,3 @@ struct CardData: Codable {
         case done = "DONE"
     }
 }
-
-extension CardData {
-    
-    func toDomain() -> CardEntity {
-        return CardEntity(id: id,
-                           arrhythmias: arrhythmias.compactMap { $0.toDomain() },
-                           createdDate: ISO8601DateFormatter().date(from: createdDate)!,
-                           patientName: patientName,
-                           status: status.toDomain()!)
-    }
-}
-
-extension CardData.Arrhythmias {
-
-    func toDomain() -> CardEntity.Arrhythmias? {
-        guard let arrhythmias = CardEntity.Arrhythmias(rawValue: rawValue) else {
-            print("cannot convert CardData.Arrhythmias '\(rawValue)' to CardEntity.Arrhythmias")
-            return nil
-        }
-        return arrhythmias
-    }
-}
-
-extension CardData.Status {
-
-    func toDomain() -> CardEntity.Status? {
-        guard let status = CardEntity.Status(rawValue: rawValue) else {
-            print("cannot convert CardData.Status '\(rawValue)' to CardEntity.Status")
-            return nil
-        }
-        return status
-    }
-}
