@@ -43,19 +43,20 @@ final class CardsListViewController: UIViewController {
 extension CardsListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return cardsListViewModel.sectionsOriginal.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Section \(section)"
+        return cardsListViewModel.sectionsOriginal[section].status
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return cardsListViewModel.sectionsOriginal[section].cards.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CardsListItemCell.reuseIdentifier, for: indexPath) as! CardsListItemCell
+        cell.fill(with: cardsListViewModel.sectionsOriginal[indexPath.section].cards[indexPath.row])
         return cell
     }
     
