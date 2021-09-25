@@ -26,41 +26,7 @@ final class CardsListViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "Patients"
         navigationItem.setHidesBackButton(true, animated: false)
-        tableView.register(UINib(nibName: CardsListItemCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: CardsListItemCell.reuseIdentifier)
-        
-        // VM -> V
-        cardsListViewModel.didChange = {
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        
-        // V -> VM
-        cardsListViewModel.loadData()
-    }
-}
-
-extension CardsListViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return cardsListViewModel.sectionsOriginal.count
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return cardsListViewModel.sectionsOriginal[section].status
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cardsListViewModel.sectionsOriginal[section].cards.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CardsListItemCell.reuseIdentifier, for: indexPath) as! CardsListItemCell
-        cell.fill(with: cardsListViewModel.sectionsOriginal[indexPath.section].cards[indexPath.row])
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CardsListItemCell.height
+        initTableview()
+        initModel()
     }
 }

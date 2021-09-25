@@ -28,6 +28,8 @@
 		099B260326FF7718008DB44A /* CardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260226FF7718008DB44A /* CardsListViewModel.swift */; };
 		099B260526FF7EBA008DB44A /* CardsListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260426FF7EBA008DB44A /* CardsListItemCell.swift */; };
 		099B260726FF7EC3008DB44A /* CardsListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099B260626FF7EC3008DB44A /* CardsListItemCell.xib */; };
+		099B260926FF84E8008DB44A /* CardsListViewController+model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260826FF84E8008DB44A /* CardsListViewController+model.swift */; };
+		099B260B26FF851F008DB44A /* CardsListViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260A26FF851F008DB44A /* CardsListViewController+UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		099B260226FF7718008DB44A /* CardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListViewModel.swift; sourceTree = "<group>"; };
 		099B260426FF7EBA008DB44A /* CardsListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListItemCell.swift; sourceTree = "<group>"; };
 		099B260626FF7EC3008DB44A /* CardsListItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsListItemCell.xib; sourceTree = "<group>"; };
+		099B260826FF84E8008DB44A /* CardsListViewController+model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsListViewController+model.swift"; sourceTree = "<group>"; };
+		099B260A26FF851F008DB44A /* CardsListViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsListViewController+UITableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,8 @@
 			children = (
 				099B25FE26FF7636008DB44A /* CardsListViewController.xib */,
 				099B260026FF769D008DB44A /* CardsListViewController.swift */,
+				099B260A26FF851F008DB44A /* CardsListViewController+UITableView.swift */,
+				099B260826FF84E8008DB44A /* CardsListViewController+model.swift */,
 				099B260626FF7EC3008DB44A /* CardsListItemCell.xib */,
 				099B260426FF7EBA008DB44A /* CardsListItemCell.swift */,
 			);
@@ -414,6 +420,7 @@
 			files = (
 				099B25F526FF6B8F008DB44A /* CardsListItemModel.swift in Sources */,
 				099B25FD26FF740E008DB44A /* CardDataRemote.swift in Sources */,
+				099B260926FF84E8008DB44A /* CardsListViewController+model.swift in Sources */,
 				099B25B526FF6854008DB44A /* RootViewController.swift in Sources */,
 				099B25F126FF6AF6008DB44A /* CardData.swift in Sources */,
 				099B260526FF7EBA008DB44A /* CardsListItemCell.swift in Sources */,
@@ -423,6 +430,7 @@
 				099B25B326FF6854008DB44A /* SceneDelegate.swift in Sources */,
 				099B260326FF7718008DB44A /* CardsListViewModel.swift in Sources */,
 				099B25FB26FF702B008DB44A /* CardDataLocal.swift in Sources */,
+				099B260B26FF851F008DB44A /* CardsListViewController+UITableView.swift in Sources */,
 				099B25F326FF6B2C008DB44A /* CardEntity.swift in Sources */,
 				099B25F926FF6EE7008DB44A /* CardDataInterface.swift in Sources */,
 			);
