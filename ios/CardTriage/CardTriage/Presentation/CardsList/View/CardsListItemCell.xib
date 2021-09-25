@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardsListItemCell" id="n44-oh-GdE" customClass="CardsListItemCell" customModule="CleanArch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n44-oh-GdE" id="dSs-wh-fTc">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="patientName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4T-gA-qB4">
+                        <rect key="frame" x="20" y="11" width="87" height="17"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpw-tW-zHT">
+                        <rect key="frame" x="20" y="34" width="35" height="14.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="createdDate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hO-Tg-xWC">
+                        <rect key="frame" x="20" y="54.5" width="70" height="14.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="arrhythmias" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-pA-W7i">
+                        <rect key="frame" x="20" y="75" width="67" height="14.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x4T-gA-qB4" firstAttribute="leading" secondItem="Oea-pA-W7i" secondAttribute="leading" id="0yL-in-ZE1"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Oea-pA-W7i" secondAttribute="bottom" constant="10" id="4F6-oi-7FT"/>
+                    <constraint firstItem="Gpw-tW-zHT" firstAttribute="leading" secondItem="x4T-gA-qB4" secondAttribute="leading" id="BIQ-Dt-r5b"/>
+                    <constraint firstItem="Gpw-tW-zHT" firstAttribute="top" secondItem="x4T-gA-qB4" secondAttribute="bottom" constant="6" id="CIP-eI-nVS"/>
+                    <constraint firstItem="x4T-gA-qB4" firstAttribute="top" secondItem="dSs-wh-fTc" secondAttribute="top" constant="11" id="EzF-ZP-IAO"/>
+                    <constraint firstItem="x4T-gA-qB4" firstAttribute="leading" secondItem="dSs-wh-fTc" secondAttribute="leadingMargin" id="X9f-eF-i3L"/>
+                    <constraint firstItem="8hO-Tg-xWC" firstAttribute="leading" secondItem="x4T-gA-qB4" secondAttribute="leading" id="eX1-qX-vby"/>
+                    <constraint firstItem="Oea-pA-W7i" firstAttribute="top" secondItem="8hO-Tg-xWC" secondAttribute="bottom" constant="6" id="kmD-Dx-ULG"/>
+                    <constraint firstItem="8hO-Tg-xWC" firstAttribute="top" secondItem="Gpw-tW-zHT" secondAttribute="bottom" constant="6" id="mNo-6U-QgD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="CardsListItemCell"/>
+            <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="arrhythmias" destination="Oea-pA-W7i" id="yij-bN-DYH"/>
+                <outlet property="createdDate" destination="8hO-Tg-xWC" id="8R7-sz-2iz"/>
+                <outlet property="patientName" destination="x4T-gA-qB4" id="mx7-Ao-56K"/>
+                <outlet property="status" destination="Gpw-tW-zHT" id="ewr-w5-TTh"/>
+            </connections>
+            <point key="canvasLocation" x="-277" y="462"/>
+        </tableViewCell>
+    </objects>
+</document>

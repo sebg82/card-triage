@@ -26,6 +26,8 @@
 		099B25FF26FF7636008DB44A /* CardsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099B25FE26FF7636008DB44A /* CardsListViewController.xib */; };
 		099B260126FF769D008DB44A /* CardsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260026FF769D008DB44A /* CardsListViewController.swift */; };
 		099B260326FF7718008DB44A /* CardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260226FF7718008DB44A /* CardsListViewModel.swift */; };
+		099B260526FF7EBA008DB44A /* CardsListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B260426FF7EBA008DB44A /* CardsListItemCell.swift */; };
+		099B260726FF7EC3008DB44A /* CardsListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099B260626FF7EC3008DB44A /* CardsListItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		099B25FE26FF7636008DB44A /* CardsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsListViewController.xib; sourceTree = "<group>"; };
 		099B260026FF769D008DB44A /* CardsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListViewController.swift; sourceTree = "<group>"; };
 		099B260226FF7718008DB44A /* CardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListViewModel.swift; sourceTree = "<group>"; };
+		099B260426FF7EBA008DB44A /* CardsListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListItemCell.swift; sourceTree = "<group>"; };
+		099B260626FF7EC3008DB44A /* CardsListItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsListItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,8 @@
 			children = (
 				099B25FE26FF7636008DB44A /* CardsListViewController.xib */,
 				099B260026FF769D008DB44A /* CardsListViewController.swift */,
+				099B260626FF7EC3008DB44A /* CardsListItemCell.xib */,
+				099B260426FF7EBA008DB44A /* CardsListItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099B260726FF7EC3008DB44A /* CardsListItemCell.xib in Resources */,
 				099B25FF26FF7636008DB44A /* CardsListViewController.xib in Resources */,
 				099B25BD26FF6856008DB44A /* LaunchScreen.storyboard in Resources */,
 				099B25BA26FF6856008DB44A /* Assets.xcassets in Resources */,
@@ -409,6 +416,7 @@
 				099B25FD26FF740E008DB44A /* CardDataRemote.swift in Sources */,
 				099B25B526FF6854008DB44A /* RootViewController.swift in Sources */,
 				099B25F126FF6AF6008DB44A /* CardData.swift in Sources */,
+				099B260526FF7EBA008DB44A /* CardsListItemCell.swift in Sources */,
 				099B25B126FF6854008DB44A /* AppDelegate.swift in Sources */,
 				099B25F726FF6EA0008DB44A /* CardsListUseCase.swift in Sources */,
 				099B260126FF769D008DB44A /* CardsListViewController.swift in Sources */,
