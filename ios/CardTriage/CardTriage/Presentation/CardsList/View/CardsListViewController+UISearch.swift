@@ -10,6 +10,8 @@ import UIKit
 extension CardsListViewController {
     
     func initSearchController() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardDidHideNotification, object: nil)
         let searchController = UISearchController()
         searchController.loadViewIfNeeded()
         searchController.searchResultsUpdater = self
